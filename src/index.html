@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kuromi Weather App</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <div class="weather-card">
+        <nav class = "weather-nav">
+        <span class="nav-title">Weather App</span>
+        <div class="nav-buttons">
+          <button id="celsius-btn">°C</button>
+          <button id="fahrenheit-btn">°F</button>
+        </div>
+      </nav>
+      <div class="weather-app-kuromi">
+        <img src="./assets/images/kuromi_awake.png" alt="Kuromi Awake" class="kuromi-image day-image" />
+        <img src="./assets/images/kuromi_sleep.png" alt="Kuromi Sleeping" class="kuromi-image night-image" />
+        <div class="star-temp">
+        <img src="./assets/images/star.png" alt="Star" class="star" />
+        <span id="temp-display"></span>
+      </div>
+      <div class="weather-message">
+        <span id="weather-message-display"></span>
+      </div>
+        </div>
+        <p>made by jjjlyk</p>
+      </div>
+    </div>
+    <script src="render.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

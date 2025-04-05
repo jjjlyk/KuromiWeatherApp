@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+.root {
+  --color-primary: #0e172c;
+}
+
+body {
+  font-family: 'Pixelify Sans', 'Courier New', Courier, monospace, 'Lucida Console', Monaco, 'Lucida Sans Typewriter', 'Lucida Grande Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, Consolas, 'Andale Mono WT', 'Andale Mono', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+}
+
+.weather-container {
+  position: relative;
+}
+
+.weather-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 512px;
+  height: 512px;
+  object-fit: cover;
+}
+ 
+.weather-card p {
+  position: relative;
+  z-index: 100;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size:10px;
+  top: -70px;
+}
+
+.weather-nav {
+  background-color: #B363FF;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 512px;
+  height: 60px;
+  box-shadow: 0 2px 5px #9465C3;
+  display:flex;
+  justify-content: space-between;
+}
+
+.nav-buttons button {
+  color: #42215C;
+  background-color: #C598F2;
+  border: 3px solid #42215C;
+  text-align: center;
+  font-size: 30px;
+  margin: 6px 6px;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  font-family: 'Pixelify Sans';
+  align-items: right;
+  margin-top: 8px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1px;
+}
+
+.nav-buttons button:hover {
+  background-color: #42215C;
+  color: #C598F2;
+  transition: all 0.3s ease;
+}
+
+.nav-title {
+  display: flex;
+  align-items: left;
+  color: #42215C;
+  margin: 6px 6px;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.day-image {
+  display:block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin-top: 28px;
+  animation:moveHead 2s steps(2) infinite;
+}
+
+@keyframes moveHead {
+  0% {
+    transform: rotate(0deg); /* Neutral position */
+  }
+  25% {
+    transform: rotate(-5deg); /* Rotate slightly to the left */
+  }
+  50% {
+    transform: rotate(0deg); /* Back to neutral */
+  }
+  75% {
+    transform: rotate(5deg); /* Rotate slightly to the right */
+  }
+  100% {
+    transform: rotate(0deg); /* Back to neutral */
+  }
+}
+
+.night-image {
+  display:none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 28px;
+  animation: kuromiSleep 2s steps(2) infinite;
+}
+
+@keyframes kuromiSleep {
+  0% {
+    content: url('./assets/images/kuromi_sleep.png'); /* First frame */
+  }
+  50% {
+    content: url('./assets/images/kuromi_sleep_1.png'); /* Second frame */
+  }
+  100% {
+    content: url('./assets/images/kuromi_sleep.png'); /* Back to first frame */
+  }
+}
+
+.star-temp img{
+  position: absolute;
+  align-items: left;
+  left: 15px;
+  top: 50px;
+  width: 180px;
+  height: 180px;
+  z-index: 7;
+  transform: rotate(-15deg);
+}
+
+.weather-message {
+  background-color: #f3e9e9;
+  border-radius: 50px;
+  color: #42215C;
+  border: 3px solid #42215C;
+  width: 366px;
+  height: 50px;
+  top: 345px;
+  left: 65px;
+  z-index: 100;
+  position: absolute;
+}
+
+#weather-message-display {
+  font-size: 38px;
+  padding: 10px;
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+  margin-left: 78px;
+  margin-top: -7px;
+}
+
+#temp-display {
+  position: absolute;
+  color: #42215C;
+  padding: 15px;
+  z-index: 100;
+  width: 160px;
+  height: 160px;
+  transform: rotate(-15deg);
+  font-size: 30px;
+}
