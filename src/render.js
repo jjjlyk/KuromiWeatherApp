@@ -71,9 +71,9 @@ function updateTemperatureDisplay() {
   const tempDisplay = document.getElementById('temp-display');
   if (isCelsius) {
     tempDisplay.textContent = `${currentTemperatureCelsius}`;
-    tempDisplay.style.fontSize = '35px;';
-    tempDisplay.style.left =  '90px';
-    tempDisplay.style.top =   '100px';
+    tempDisplay.style.fontSize = '27px';
+    tempDisplay.style.left =  '80px';
+    tempDisplay.style.top = '105px';
   } else {
     // this is for fahrenheit
     const tempFahrenheit = (currentTemperatureCelsius * 9/5) + 32;
