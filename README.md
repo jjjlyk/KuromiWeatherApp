@@ -24,4 +24,4 @@ npm install axios
 npm start
 ```
 # 📃Note:
-All assets are made by me! If you are wondering what application I used for my pixel art creations, I used Pixel Studio on Steam! It is free and beginner friendly.
+All assets are made by me! If you are wondering what application I used for my pixel art creations, I used Pixel Studio on Steam! It is free and beginner friendly. Also, this project is inspired by Nashallery ^^
