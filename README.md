@@ -1,5 +1,5 @@
 # KuromiWeatherApp
-![Uploading Kuromi Weather App.gif…]()
+![Kuromi Weather App](https://github.com/user-attachments/assets/f661ec2a-62f0-4340-9f95-6cb8168f9fb5)
 # 📌About:
 This is a simple weather application project using Electron JS to determine the temperature in Manila in Celsius and Fahrenheit and the weather data using the Open-meteo API.
 
